@@ -34,7 +34,7 @@
                         <td>
                             <a href="{{ route('posts.show', $post->id) }}" style="color: blue;">View</a> |
 
-                            <a href="{{ route('posts.edit', $post->id) }}" style="color: green;">Edit</a> |
+                            <a href="{{ route('posts.edit', $post) }}" style="color: green;">Edit</a> |
 
                             <form action="{{ route('posts.destroy', $post->id) }}" method="POST" style="display: inline;">
                                 @csrf
