@@ -36,7 +36,7 @@
 
                             <a href="{{ route('posts.edit', $post) }}" style="color: green;">Edit</a> |
 
-                            <form action="{{ route('posts.destroy', $post->id) }}" method="POST" style="display: inline;">
+                            <form action="{{ route('posts.destroy', $post) }}" method="POST" style="display: inline;">
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" style="color: red; background: none; border: none; cursor: pointer;">Delete</button>
